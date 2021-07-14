@@ -146,13 +146,12 @@ footer {
   }
 
   .container {
-    width: 70%;
+    width: 100%;
   }
   .players {
     grid-template-columns: repeat(1, 1fr);
   }
-  .banners,
-  footer {
+  .banners {
     display: none;
   }
 }
