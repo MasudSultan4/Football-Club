@@ -1,0 +1,158 @@
+/* import google font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  margin-bottom: 85px;
+}
+
+.container {
+  width: 1050px;
+  margin: auto;
+}
+
+.full-banner {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #2d25a0;
+  justify-content: center;
+  height: 585px;
+}
+
+.banners {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 102px;
+  margin-top: 44px;
+}
+
+.club-tital h1 {
+  width: 485px;
+  height: 230px;
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+}
+
+button {
+  width: 148px;
+  height: 44px;
+  color: white;
+  background-color: #e02c6d;
+  border: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.button:hover {
+  transform: translateY(-6px);
+}
+
+button:hover::before {
+  opacity: 1;
+}
+
+button i {
+  margin-left: 10px;
+}
+
+.club-img {
+  width: 557px;
+  height: 440px;
+}
+
+.club-img img {
+  width: 100%;
+}
+
+/* players info  */
+
+.player-img {
+  width: 300px;
+  height: 256px;
+}
+
+.player-img img {
+  width: 100%;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.player-info h4 {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* footer section  */
+
+.footer-img {
+  width: 484px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 85px;
+}
+
+.footer-img img {
+  width: 100%;
+}
+
+.footer-icon i {
+  font-size: 22px;
+  color: #969bab;
+  text-align: center;
+}
+
+.footer-icon .bg {
+  padding: 18px;
+  margin-left: 8px;
+  border-radius: 50px;
+  background-color: #e7e7e8;
+  text-align: center;
+}
+
+.footer-coment p {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 70%;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banners,
+  footer {
+    display: none;
+  }
+}
