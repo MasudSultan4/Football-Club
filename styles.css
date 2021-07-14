@@ -45,12 +45,20 @@ button {
   color: white;
   background-color: #e02c6d;
   border: none;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 16px;
 }
 
 button i {
   margin-left: 10px;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+}
+
+.btn {
+  transition: transform 250ms;
 }
 
 .club-img {
@@ -163,6 +171,14 @@ footer {
     width: 50%;
     height: 50%;
     font-size: 30px;
+  }
+
+  .btn:hover {
+    transform: translateY(-10px);
+  }
+
+  .btn {
+    transition: transform 250ms;
   }
 
   .container {
